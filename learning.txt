@@ -1,0 +1,18 @@
+Authtentication and Authorization
+
+Authentication 
+
+Two patterns Authentication : 
+1. Statefull Authentication - session id - uuid library
+
+mongodb - datamodels - schemas
+
+
+2. Stateless Authentication
+
+MongoDb Crud Operations
+
+C - CREATE - done✅
+R - READ - done✅
+U - UPDATE - done✅
+D - DELETE - done✅
