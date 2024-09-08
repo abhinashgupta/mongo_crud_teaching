@@ -41,34 +41,34 @@ router.post("/create", async (req, res) => {
   res.send(user);
 });
 
+
 router.get('/read', async (req, res) => {
   const user = await User.find();
   res.send(user);
 });
 
-router.get('/findOne', async (ereq, res) => {
-  const user = await User.findOne({ name: "Ankit" });
+router.get('/readOne', async (req, res) => {
+  const user = await User.findOne({ name: "Ayush" });
   res.send(user);
 });
 
 router.get('/update', async (req, res) => {
-  const {name , email , password } = req.body;
+  const { name, email, password } = req.body;
   const user = await User.findByIdAndUpdate(
-    { _id: "66d34ff57a15d77c1fa7986d" },
-    { name: "Monu", email: "kunalmonu@gmail.com" }
+    { _id: "66dd2b5e34fd5765156e9444" },
+    { name: "Ayushi" , email : "ayushi@gmail.com" }
   );
   res.send(user);
 })
 
-
 router.get('/delete', async (req, res) => {
   const user = await User.findByIdAndDelete({
-    _id: "66dc71b29348e94a766113e2",
+    _id: "66dd2b6b34fd5765156e9446",
   });
   res.send("user deleted successfully");
-});
+})
 
-router.get('/deleteAll', async (req, res) => {
+router.get("/deleteAll", async (req, res) => {
   const user = await User.deleteMany();
   res.send("all user deleted successfully");
 });

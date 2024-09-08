@@ -12,7 +12,7 @@ mongodb - datamodels - schemas
 
 MongoDb Crud Operations
 
-C - CREATE - done✅
-R - READ - done✅
-U - UPDATE - done✅
-D - DELETE - done✅
+C - CREATE - done✅ - .create()
+R - READ - done✅ - .find() , .findOne()
+U - UPDATE - done✅ - .findByIdAndUpdate()
+D - DELETE - done✅ - .findByIdAndDelete() , .deleteMany()
